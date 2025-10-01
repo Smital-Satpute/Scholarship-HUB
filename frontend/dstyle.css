@@ -1,0 +1,147 @@
+/* HEADER */
+
+body {
+    font-family: 'Canvas Sans', 'Times New Roman', sans-serif;
+    background-image: url('Images/projectbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000;
+    margin: 0;
+    padding-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HOME PAGE OF THE WEBSITE */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 55px;
+}
+
+.logo img {
+    /* margin-left: 20px; */
+    width: 350px;
+    height: 54px;
+    /* margin-right: 20px; */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Allow the search box to take full center width */
+.search-container {
+    flex-grow: 1; /* Makes the search container flexible and take available space */
+    margin: 0 20px; /* Small margin between logo and logout button */
+}
+
+nav ul li input {
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 37px;
+    height: 37px;
+    width: 745px; /* Takes full width of its container */
+    background-color: #ead0fe50;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ccc;
+}
+
+/* Style the logout button */
+nav ul li button {
+    border: none;
+    width: 135px;
+    background-color: #6200eacd;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 35px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+nav ul li button:hover {
+    background-color: #3700b3;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* PAGE */
+
+.popular-scholarships {
+    margin:0; /* Add margin to separate from header */
+}
+
+
+
+.popular-scholarships h1 {
+    /* text-align: center; */
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.519);
+    
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.scholarship-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+}
+
+.scholarship-box {
+    background-color: rgba(255, 255, 255, 0.523);
+    border-radius: 10px;
+    padding: 20px;
+    height: 150px;
+    width: 1300px; /* Fixed width for boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickable */
+}
+
+.scholarship-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.scholarship-box h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.scholarship-box p {
+    text-align: justify;
+    font-size: 18px;
+    color: #555;
+}

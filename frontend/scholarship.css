@@ -1,0 +1,166 @@
+body {
+    font-family: 'Canvas Sans', 'Times New Roman', sans-serif;
+    background-image: url('Images/projectbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000;
+    margin: 0; /* Reset any margins */
+    padding-top: 80px; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HOME PAGE OF THE WEBSITE */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 55px;
+}
+
+.logo img {
+    /* margin-left: 20px; */
+    width: 350px;
+    height: 54px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.scholarship-details {
+    padding: 46px;
+    background-color: rgba(255, 255, 255, 0.523);
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
+}
+
+h3 {
+    color: #333333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+#video-section{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+#scholarship-name {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.name+p {
+    line-height: 32px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+#about-text {
+ font-size: 19px;
+ text-align: justify;
+}
+
+#about-desc {
+    font-size: 19px;
+    text-align: justify;
+}
+
+iframe {
+    width: 889px;
+    height: 500px; /* Reduced height for a shorter display */
+    border: none;
+}
+
+.youtube-thumbnail {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    width: 300px; /* Set a fixed width for the square */
+    height: 300px; /* Set a fixed height for the square */
+    margin: 0 auto; /* Center the thumbnail */
+}
+
+.thumbnail-image {
+    text-align: center;
+    border-radius: 10px; /* Adjusted for a slight rounding effect */
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    max-width: 300px; /* Maximum width for the thumbnail */
+    max-height: 800px; /* Maximum height for the thumbnail */
+}
+
+.thumbnail-image:hover {
+    transform: scale(1.1);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px; /* Size of the play button */
+    height: 60px; /* Size of the play button */
+    background: url('Images/video.png') no-repeat center center; /* Use your play button image */
+    background-size: contain; /* Scale to fit */
+    transform: translate(-50%, -50%);
+}
+
+nav ul li button {
+    border: none;
+    width: 135px;
+    background-color: #6200eacd;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 35px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #3700b3;
+}
